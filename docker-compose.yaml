@@ -1,0 +1,30 @@
+services:
+  store_dummy:
+    build: .
+    ports:
+      - 8081:8081
+      - 19000:19000
+      - 19001:19001
+      - 19002:19002
+      - 19006:19006
+    environment:
+      - NODE_ENV=development
+      - EXPO_DEVTOOLS_LISTEN_ADDRESS=0.0.0.0
+      - REACT_NATIVE_PACKAGER_HOSTNAME=192.168.0.11
+    stdin_open: true
+    tty: true
+
+    # volumes:
+    #     - ~/mnt/c/Users/cruza/Desktop/vols/:/app:rw
+    volumes:
+      - "./.expo:/app/.expo"
+      - "./src:/app/src"
+      - "./assets:/app/assets"
+      - "./App.js:/app/App.js"
+      - "./app.json:/app/app.json"
+      - "./babel.config.js:/app/babel.config.js"
+      - "./package.json:/app/package.json"
+      - "./metro.config.js:/app/metro.config.js"
+      - "./README.md:/app/README.md"
+# volumes:
+#   source:
