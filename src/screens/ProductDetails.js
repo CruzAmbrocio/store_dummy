@@ -1,11 +1,13 @@
 import { FlatList, Image, Pressable, ScrollView, StyleSheet, Text, View, useWindowDimensions } from "react-native";
-import { useSelector } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
+import { cartSlice } from '../store/cartSlice'
 
 const ProductDetails=()=>{
   const product = useSelector((state)=>state.products.selectedProduct);
+  const dispatch = useDispatch();
   const {width} = useWindowDimensions();
   const addToCart=()=>{
-    console.warn('add to cart')
+    dispatch(cartSlice.actions.addCartItem({product: product}));
   }
   return(
     <View>
@@ -54,7 +56,8 @@ const styles = StyleSheet.create({
     marginVertical:10,
     fontSize:18,
     lineHeight:30,
-    fontWeight:'300'
+    fontWeight:'300',
+    paddingBottom:75
   },
   button:{
     position:'absolute',
