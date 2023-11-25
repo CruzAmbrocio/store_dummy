@@ -1,12 +1,9 @@
 import { StatusBar, StyleSheet, View } from 'react-native';
-import ProductsList from './src/screens/ProductsList';
+import Navigation from "./src/Navigation"
 
-export default function App() {
+function App() {
   return (
-    <View style={styles.container}>
-      <ProductsList/>
-      <StatusBar style="auto"/>
-    </View>
+      <Navigation/>
   );
 }
 
@@ -18,3 +15,5 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
   },
 });
+
+export default App;
