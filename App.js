@@ -1,9 +1,13 @@
 import { StatusBar, StyleSheet, View } from 'react-native';
 import Navigation from "./src/Navigation"
+import { Provider } from 'react-redux';
+import { store } from './src/store';
 
 function App() {
   return (
-      <Navigation/>
+      <Provider store={store}>
+        <Navigation/>
+      </Provider>
   );
 }
 
