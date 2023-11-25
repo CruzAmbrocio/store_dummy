@@ -6,6 +6,7 @@ module.exports = {
         inlineRequires: true,
       },
     }),
+    assetPlugins: ['expo-asset/tools/hashAssetFiles'],
   },
   //added this
   resolver: {

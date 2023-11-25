@@ -1,7 +1,7 @@
 {
   "expo": {
     "name": "store_dummy",
-    "slug": "store_dummy",
+    "slug": "storedummy",
     "version": "1.0.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
@@ -15,19 +15,31 @@
       "**/*"
     ],
     "updates": {
-      "fallbackToCacheTimeout": 0
+      "fallbackToCacheTimeout": 0,
+      "url": "https://u.expo.dev/78abbbb1-fe65-446c-ae19-d417d5a30365"
     },
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.cruz.ambrocio.storedummy"
     },
     "android": {
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.cruz.ambrocio.storedummy"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "78abbbb1-fe65-446c-ae19-d417d5a30365"
+      }
+    },
+    "owner": "cruz.ambrocio",
+    "runtimeVersion": {
+      "policy": "appVersion"
     }
   }
 }
