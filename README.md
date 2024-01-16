@@ -2,7 +2,14 @@
 ### frontend of an online store
 ### Link to the preview in EXPO GO app.
 
-![dummy_store](https://github.com/CruzAmbrocio/store_dummy/assets/10201059/208398d8-5585-48ca-ba00-deab398db6db)
+<img src="https://github.com/CruzAmbrocio/store_dummy/assets/10201059/21cf3f33-7315-4906-8921-b15f45174038" width="160" />
+
+[EXPO LINK ANDROID exp://u.expo.dev/update/d467dbba-ffda-471a-9bc0-d595b6d1ebcb](exp://u.expo.dev/update/d467dbba-ffda-471a-9bc0-d595b6d1ebcb)
+
+<img src="https://github.com/CruzAmbrocio/store_dummy/assets/10201059/a7a446bf-5255-498a-a206-8d8ccc332e38" width="160" />
+
+[EXPO LINK IOS exp://u.expo.dev/update/c7e32490-4dd8-4fc0-a68b-67a8efb100bb](exp://u.expo.dev/update/c7e32490-4dd8-4fc0-a68b-67a8efb100bb)
+
 <br><br>
 
 ### App preview images:
